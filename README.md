@@ -1,1 +1,0 @@
-# SpringDGM2020
