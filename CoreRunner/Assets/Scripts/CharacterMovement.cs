@@ -38,7 +38,7 @@ public class CharacterMovement : MonoBehaviour
         //Get input for stop running
         if(Input.GetKeyUp(KeyCode.LeftShift))
         {
-        //return seed variable to normal
+        //return speed variable to normal
         speed = Walk;
         }
       
