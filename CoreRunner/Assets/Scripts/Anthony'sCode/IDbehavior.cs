@@ -2,5 +2,5 @@
 
 public class IDbehavior : MonoBehaviour
 {
-    public NameID[] NameIDObj;
+    public NameID NameIDObj;
 }
