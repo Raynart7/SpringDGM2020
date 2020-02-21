@@ -13,18 +13,43 @@ public class CharacterMovement : MonoBehaviour
     public GameObject Player;
     public float Sprint = 10f;
     public float Walk = 5f;
-
+    public int DoubleJump = 0;
+    public GameObject GroundCheck;
+    public float GroundCheckRadius;
+    public bool IsGrounded;
     
 
     void Update()
     {
+      IsGrounded = Physics.CheckSphere(GroundCheck.transform.position, GroundCheckRadius);
+
+
         positionDirection.z = Input.GetAxis("Vertical")*speed;
         
         positionDirection.x = Input.GetAxis("Horizontal")*speed;
-        if (Input.GetButtonDown("Jump") && controller.isGrounded)
+        if (Input.GetButtonDown("Jump") && DoubleJump <2)
         {
             positionDirection.y = jumpForce;
+
+            DoubleJump ++;
         }
+
+        if(IsGrounded)
+        {
+          DoubleJump = 0;
+        }
+
+        print (positionDirection);
+        Vector3 temp = new Vector3(0, 0, 0);
+        temp.x = positionDirection.x;
+        temp.z = positionDirection.z;
+
+        if(positionDirection.x != 0 || positionDirection.z != 0)
+        {
+          transform.rotation = Quaternion.LookRotation(temp);
+        }
+
+
         positionDirection.y += gravity;
         controller.Move(positionDirection*Time.deltaTime);
 

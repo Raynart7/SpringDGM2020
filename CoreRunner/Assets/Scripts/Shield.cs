@@ -1,28 +1,29 @@
-﻿// using System.Collections;
-// using System.Collections.Generic;
-// using UnityEngine;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 
-// public class Shield : MonoBehaviour
-// {
-//     public bool ShieldingIsRunning = false;
-//     public float Shielding;
-//     public float NotShield;
-//     public float 
+public class Shield : MonoBehaviour
+{
+    public bool Shielding; 
+    public GameObject ShieldObject;
     
-//     void Update()
-//     //Get input for shielding
-//       if(Input.GetMouseButtonDown(1))
-//       {
-//         //Change shield variable
-//         speed = Shielding;
-//       }
+    void Update()
+    {
+    //Get input for shielding
+      if(Input.GetMouseButtonDown(1))
+      {
+        //Change shield variable
+        Shielding = true;
+        ShieldObject.SetActive(true);
+      }
     
-//         //Get input for stop shielding
-//         if(Input.GetMouseButtonDown(1))
-//         {
-//         //return shield variable to normal
-//         speed = NotShielding;
-//         }
-//     // Update is called once per frame
+        //Get input for stop shielding
+        if(Input.GetMouseButtonUp(1))
+        {
+        //return shield variable to normal
+        Shielding = false;
+        ShieldObject.SetActive(false);
+        }
+    }
     
-// }
+}
