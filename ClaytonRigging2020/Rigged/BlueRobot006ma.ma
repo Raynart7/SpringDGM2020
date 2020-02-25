@@ -1,6 +1,6 @@
 //Maya ASCII 2018 scene
-//Name: BlueRobot005.ma
-//Last modified: Mon, Feb 24, 2020 08:54:43 PM
+//Name: BlueRobot006ma.ma
+//Last modified: Mon, Feb 24, 2020 08:55:26 PM
 //Codeset: 1252
 requires maya "2018";
 requires "stereoCamera" "10.0";
@@ -54050,4 +54050,4 @@ connectAttr "rust_shader.msg" ":defaultShaderList1.s" -na;
 connectAttr "defaultRenderLayer.msg" ":defaultRenderingList1.r" -na;
 connectAttr "orange_model_01_defaultRenderLayer.msg" ":defaultRenderingList1.r" 
 		-na;
-// End of BlueRobot005.ma
+// End of BlueRobot006ma.ma
