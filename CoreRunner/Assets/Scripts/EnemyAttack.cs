@@ -8,7 +8,7 @@ public class EnemyAttack : MonoBehaviour
     public float Timer;
     public bool AttackingIsRunning = false;
 
-    void OnTriggerEnter()
+    void OnTriaggerEnter()
     {
             if(AttackingIsRunning == false)
             {

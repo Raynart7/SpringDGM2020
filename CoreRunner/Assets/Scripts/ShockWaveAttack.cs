@@ -15,7 +15,7 @@ public class ShockWaveAttack : MonoBehaviour
             if(AttackingIsRunning == false)
             {
                 CanAttack = true; 
-                StartCoroutine(Attacking());
+                StartCoroutine(AttackCycle());
             }     
     }
 
