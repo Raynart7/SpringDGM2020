@@ -1,23 +1,42 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.UI;
-    
-    
-[RequireComponent(typeof(Text))]
-public class TextBehavior : MonoBehaviour
+﻿using UnityEngine;
+using UnityEngine.Events;
+using UnityEngine.Serialization;
+
+[CreateAssetMenu]
+public class GameAction : ScriptableObject
 {
-    private Text textObj;
-    public StringListData stringListDataObj;
+    public UnityAction<object> raise;
+    public UnityAction<Coroutine> raiseCoroutine;
+    public UnityAction raiseNoArgs;
 
-    void Awake()
+    //Overloading
+    public void RaiseAction()
     {
-        textObj = GetComponent<Text>();
+        raiseNoArgs();
     }
 
-    void Update()
+    public void RaiseAction(Object obj)
     {
-        textObj.text = stringListDataObj.ReturnCurrentLine();
+        raise(obj);
     }
 
+    public void RaiseAction(float obj)
+    {
+        raise(obj);
+    }
+
+    public void RaiseAction(int obj)
+    {
+        raise(obj);
+    }
+
+    public void RaiseAction(Transform obj)
+    {
+        raise(obj);
+    }
+
+    public void RaiseAction(Coroutine obj)
+    {
+        raiseCoroutine(obj);
+    }
 }
