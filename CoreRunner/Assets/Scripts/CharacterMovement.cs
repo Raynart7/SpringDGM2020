@@ -39,7 +39,6 @@ public class CharacterMovement : MonoBehaviour
           DoubleJump = 0;
         }
 
-        print (positionDirection);
         Vector3 temp = new Vector3(0, 0, 0);
         temp.x = positionDirection.x;
         temp.z = positionDirection.z;
