@@ -17,7 +17,10 @@ public class CharacterMovement : MonoBehaviour
     public GameObject GroundCheck;
     public float GroundCheckRadius;
     public bool IsGrounded;
-    
+    public int SprintHealth;
+    public int JumpHealth;
+
+
 
     void Update()
     {
@@ -29,6 +32,7 @@ public class CharacterMovement : MonoBehaviour
         positionDirection.x = Input.GetAxis("Horizontal")*speed;
         if (Input.GetButtonDown("Jump") && DoubleJump <2)
         {
+            GetComponent<Health>().TakeHealth(JumpHealth);
             positionDirection.y = jumpForce;
 
             DoubleJump ++;
@@ -57,6 +61,7 @@ public class CharacterMovement : MonoBehaviour
       {
         //Change speed variable
         speed = Sprint;
+            GetComponent<Health>().TakeHealth(SprintHealth);
       }
     
         //Get input for stop running

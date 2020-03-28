@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+﻿/*using UnityEngine;
 
 [CreateAssetMenu]
 public class MathFunctions : DoWork
@@ -9,3 +9,4 @@ public class MathFunctions : DoWork
         dataObj.Value++;
     }
 }
+*/

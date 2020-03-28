@@ -9,10 +9,15 @@ public class Health : MonoBehaviour
     public int HealthStorage = 100;
     public UnityEvent TakeDamageEvent;
     public UnityEvent DeathEvent;
+    public int MaxHealth;
 
-    public void TakeHealth()
+    public void Start()
     {
-        HealthStorage -= 10;
+        HealthStorage = MaxHealth;
+    }
+    public void TakeHealth(int NewHealth)
+    {
+        HealthStorage -= NewHealth;
         TakeDamageEvent.Invoke();
 
         if (HealthStorage == 0)
@@ -24,6 +29,7 @@ public class Health : MonoBehaviour
     public void GiveHealth()
     {
         HealthStorage += 10;
+        TakeDamageEvent.Invoke();
     }
 
     public void Death()

@@ -6,6 +6,8 @@ public class Shield : MonoBehaviour
 {
     public bool Shielding; 
     public GameObject ShieldObject;
+    public int ShieldHealth;
+
     
     void Update()
     {
@@ -15,6 +17,7 @@ public class Shield : MonoBehaviour
         //Change shield variable
         Shielding = true;
         ShieldObject.SetActive(true);
+            GetComponent<Health>().TakeHealth(ShieldHealth);
       }
     
         //Get input for stop shielding

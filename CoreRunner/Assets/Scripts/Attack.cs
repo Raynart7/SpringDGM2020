@@ -7,6 +7,7 @@ public class Attack : MonoBehaviour
     public GameObject Hitbox;
     public float Timer;
     public bool AttackingIsRunning = false;
+    public int AttackingHealth;
 
     void Update()
     {
@@ -14,6 +15,7 @@ public class Attack : MonoBehaviour
         if(Input.GetMouseButtonDown(0))
         {
             if(AttackingIsRunning == false){
+                GetComponent<Health>().TakeHealth(AttackingHealth);
                 StartCoroutine(Attacking());
             }
         }      
