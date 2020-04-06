@@ -1229,6 +1229,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RobotSW
       objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: 8fbbb41099731b54a9a326c8a5d6a39e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: 8fbbb41099731b54a9a326c8a5d6a39e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -2074,7 +2078,7 @@ PrefabInstance:
     - target: {fileID: 3686469647934684293, guid: bfa94a5626beffb4193328f86340cf1a,
         type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3686469647934684315, guid: bfa94a5626beffb4193328f86340cf1a,
         type: 3}
@@ -2111,6 +2115,11 @@ PrefabInstance:
       propertyPath: DeathEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 3686469647934684315, guid: bfa94a5626beffb4193328f86340cf1a,
+        type: 3}
+      propertyPath: MaxHealth
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 3686469647958144891, guid: bfa94a5626beffb4193328f86340cf1a,
         type: 3}
       propertyPath: m_LocalPosition.y
@@ -2133,7 +2142,7 @@ PrefabInstance:
     - target: {fileID: 6686851798788032227, guid: c59ab323c4a2304469d4983ce403b42f,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 11.4
+      value: 4.5
       objectReference: {fileID: 0}
     - target: {fileID: 6686851798788032227, guid: c59ab323c4a2304469d4983ce403b42f,
         type: 3}
@@ -2143,7 +2152,7 @@ PrefabInstance:
     - target: {fileID: 6686851798788032227, guid: c59ab323c4a2304469d4983ce403b42f,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 63.6
+      value: -1.1
       objectReference: {fileID: 0}
     - target: {fileID: 6686851798788032227, guid: c59ab323c4a2304469d4983ce403b42f,
         type: 3}
