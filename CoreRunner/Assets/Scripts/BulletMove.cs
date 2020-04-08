@@ -9,4 +9,9 @@ public class BulletMove : MonoBehaviour
     {
         transform.position += Time.deltaTime * Speed * transform.forward;
     }
+
+    public void OnTriggerEnter(Collider other)
+    {
+        Destroy(gameObject);
+    }
 }
