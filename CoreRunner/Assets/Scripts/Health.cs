@@ -20,7 +20,7 @@ public class Health : MonoBehaviour
         HealthStorage -= NewHealth;
         TakeDamageEvent.Invoke();
 
-        if (HealthStorage == 0)
+        if (HealthStorage <= 0)
         {
             Death();
         }

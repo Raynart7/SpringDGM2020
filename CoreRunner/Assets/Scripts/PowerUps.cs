@@ -5,5 +5,16 @@ using UnityEngine;
 public class PowerUps : MonoBehaviour
 {
     // On trigger restore player health
-    // Remove gameobject
+    public void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "Player")
+        {
+            other.GetComponent<Health>().GiveHealth();
+
+            // Remove gameobject
+            Destroy(gameObject);
+        }
+    }
+
+    
 }
