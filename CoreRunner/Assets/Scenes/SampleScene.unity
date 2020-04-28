@@ -838,6 +838,26 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 4300000, guid: c38347dc1d0bc9046876c3fea5f87e55, type: 3}
+--- !u!1 &232399753 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100006, guid: b53e841d4fcd13f4d84b480d34d521d5,
+    type: 3}
+  m_PrefabInstance: {fileID: 82331081}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &232399757
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 232399753}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300020, guid: b53e841d4fcd13f4d84b480d34d521d5, type: 3}
 --- !u!1 &257399475 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 2d1f467c2cc665a4e90a0165d1a53a64,
@@ -1341,7 +1361,18 @@ MonoBehaviour:
   - {fileID: 1952205268}
   RemoveWallEvent:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1849943728}
+        m_MethodName: ChangeRespawnPoint
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 653667182}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!4 &369804403
@@ -1473,7 +1504,18 @@ MonoBehaviour:
   - {fileID: 1152332599}
   RemoveWallEvent:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1849943728}
+        m_MethodName: ChangeRespawnPoint
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1303339291}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!4 &394430093
@@ -3247,7 +3289,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b476483958edfa34ebc0d4b864d6165a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -170.87823
+      value: -147
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b476483958edfa34ebc0d4b864d6165a, type: 3}
       propertyPath: m_LocalPosition.y
@@ -3486,6 +3528,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &956650880 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100002, guid: b53e841d4fcd13f4d84b480d34d521d5,
+    type: 3}
+  m_PrefabInstance: {fileID: 82331081}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &956650884
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 956650880}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300000, guid: b53e841d4fcd13f4d84b480d34d521d5, type: 3}
 --- !u!1 &960749782
 GameObject:
   m_ObjectHideFlags: 0
@@ -5069,6 +5131,46 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27a86d061a5a1cd4f9e704bea6dc7d98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1166843530 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100014, guid: b53e841d4fcd13f4d84b480d34d521d5,
+    type: 3}
+  m_PrefabInstance: {fileID: 82331081}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1166843534
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1166843530}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300014, guid: b53e841d4fcd13f4d84b480d34d521d5, type: 3}
+--- !u!1 &1214949460 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100016, guid: b53e841d4fcd13f4d84b480d34d521d5,
+    type: 3}
+  m_PrefabInstance: {fileID: 82331081}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1214949464
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1214949460}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300016, guid: b53e841d4fcd13f4d84b480d34d521d5, type: 3}
 --- !u!1 &1230527964 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3453844865062711363, guid: da1aebc6947e0ba4e81919a44333e3c7,
@@ -5095,6 +5197,26 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 4300000, guid: c38347dc1d0bc9046876c3fea5f87e55, type: 3}
+--- !u!1 &1281663650 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100012, guid: b53e841d4fcd13f4d84b480d34d521d5,
+    type: 3}
+  m_PrefabInstance: {fileID: 82331081}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1281663654
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1281663650}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300012, guid: b53e841d4fcd13f4d84b480d34d521d5, type: 3}
 --- !u!1 &1303339291 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3453844865062711363, guid: da1aebc6947e0ba4e81919a44333e3c7,
@@ -5837,7 +5959,18 @@ MonoBehaviour:
   - {fileID: 537280092}
   RemoveWallEvent:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1849943728}
+        m_MethodName: ChangeRespawnPoint
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 666752131}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!4 &1524426931
@@ -6247,6 +6380,26 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 4300000, guid: 2d1f467c2cc665a4e90a0165d1a53a64, type: 3}
+--- !u!1 &1574338811 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100004, guid: b53e841d4fcd13f4d84b480d34d521d5,
+    type: 3}
+  m_PrefabInstance: {fileID: 82331081}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1574338815
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1574338811}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300018, guid: b53e841d4fcd13f4d84b480d34d521d5, type: 3}
 --- !u!1001 &1598402371
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6405,6 +6558,26 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b476483958edfa34ebc0d4b864d6165a, type: 3}
+--- !u!1 &1636847158 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100010, guid: b53e841d4fcd13f4d84b480d34d521d5,
+    type: 3}
+  m_PrefabInstance: {fileID: 82331081}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1636847162
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1636847158}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300010, guid: b53e841d4fcd13f4d84b480d34d521d5, type: 3}
 --- !u!1 &1638294162 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100018, guid: 89b087e16b7773f4792ef71b43b1dc46,
@@ -6425,6 +6598,26 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 4300000, guid: 89b087e16b7773f4792ef71b43b1dc46, type: 3}
+--- !u!1 &1654719492 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100038, guid: b53e841d4fcd13f4d84b480d34d521d5,
+    type: 3}
+  m_PrefabInstance: {fileID: 82331081}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1654719496
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1654719492}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300004, guid: b53e841d4fcd13f4d84b480d34d521d5, type: 3}
 --- !u!1 &1660418657 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100030, guid: 89b087e16b7773f4792ef71b43b1dc46,
