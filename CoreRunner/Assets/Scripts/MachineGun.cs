@@ -8,8 +8,7 @@ public class MachineGun : MonoBehaviour
     public bool AttackIsRunning; 
     public bool CanAttack;
     public GameObject BulletPrefab;
-    public GameObject MachineGunBarrelRight;
-    public GameObject MachineGunBarrelLeft;
+    public List<GameObject> Barrels;
     public float ShootingTimer;
     public GameObject Player;
     public GameObject Enemy;
@@ -22,14 +21,16 @@ public class MachineGun : MonoBehaviour
          //Player = other(stores the thing that hit the trigger)
          Player = other.gameObject;
 
-    
+        StartShooting();
+    }
+
+    public void StartShooting()
+    {
         //Start attack (shoot bullets)
         {
-        CanAttack = true;
-        StartCoroutine(Shooting());
+            CanAttack = true;
+            StartCoroutine(Shooting());
         }
-
-
     }
 
     IEnumerator Shooting()
@@ -40,13 +41,11 @@ public class MachineGun : MonoBehaviour
         //Follow player/aim at player
         Enemy.transform.LookAt(Player.transform.position);
 
-
-         //shoot bullets
-        GameObject BulletRight = Instantiate(BulletPrefab, MachineGunBarrelRight.transform.position, Enemy.transform.rotation);
-        Destroy(BulletRight, BulletTimer);
-
-        GameObject BulletLeft = Instantiate(BulletPrefab, MachineGunBarrelLeft.transform.position, Enemy.transform.rotation);
-        Destroy(BulletLeft, BulletTimer);
+        foreach(GameObject Barrel in Barrels)
+            {
+                GameObject Bullet = Instantiate(BulletPrefab, Barrel.transform.position, Barrel.transform.rotation);
+                Destroy(Bullet, BulletTimer);
+            }
 
             //pausing between bullets
             yield return new WaitForSeconds(ShootingTimer);
@@ -57,8 +56,12 @@ public class MachineGun : MonoBehaviour
     //On Trigger Exit
     void OnTriggerExit(Collider other)
     {
+        StopShooting();
+    }
+    
+    public void StopShooting()
+    {
         //Stop Attacking
         CanAttack = false;
     }
-    
 }

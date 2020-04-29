@@ -253,8 +253,9 @@ MonoBehaviour:
   CanAttack: 0
   BulletPrefab: {fileID: 5080185511774954031, guid: 4939d61a9d6f4594481efc25d1e0dd0d,
     type: 3}
-  MachineGunBarrelRight: {fileID: 1130261358}
-  MachineGunBarrelLeft: {fileID: 474150981}
+  Barrels:
+  - {fileID: 474150981}
+  - {fileID: 1130261358}
   ShootingTimer: 0.2
   Player: {fileID: 0}
   Enemy: {fileID: 1410445348}

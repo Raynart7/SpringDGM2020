@@ -12,14 +12,24 @@ public class ShockWaveAttack : MonoBehaviour
 
     void OnTriggerEnter()
     {
-            if(AttackingIsRunning == false)
-            {
-                CanAttack = true; 
-                StartCoroutine(AttackCycle());
-            }     
+        StartAttackCycle();
+    }
+
+    public void StartAttackCycle()
+    {
+        if (AttackingIsRunning == false)
+        {
+            CanAttack = true;
+            StartCoroutine(AttackCycle());
+        }
     }
 
     void OnTriggerExit()
+    {
+        StopAttackingCycle();
+    }
+
+    public void StopAttackingCycle()
     {
         CanAttack = false;
     }
