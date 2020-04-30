@@ -361,7 +361,7 @@ RectTransform:
   m_GameObject: {fileID: 469008327}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 7.6249213, y: 4.2359304, z: 3.0499682}
+  m_LocalScale: {x: 8.234916, y: 4.5748053, z: 3.2939658}
   m_Children: []
   m_Father: {fileID: 2081584640}
   m_RootOrder: 0
@@ -890,7 +890,7 @@ MonoBehaviour:
   m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -909,7 +909,7 @@ Canvas:
   m_GameObject: {fileID: 2081584636}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_Camera: {fileID: 0}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
